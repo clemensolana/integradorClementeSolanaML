@@ -11,15 +11,15 @@ body {
 }
 
 .blue {
-    
+    background-color: #03264C;
 }
 
 .lightBlue {
-    #1259c3;
+    color: #1259c3;
 }
 
-.lightGray {
-
+main {
+    background-color: #ebebeb;
 }
 
 .gray {
