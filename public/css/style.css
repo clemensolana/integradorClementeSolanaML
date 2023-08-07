@@ -6,6 +6,17 @@ body {
     background-color: #EAC926;
 }
 
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i{
+    text-align: center;
+    background-color: #1259c3;
+    color: white;
+    padding: 5px;
+}
+
 .yellow {
 
 }
