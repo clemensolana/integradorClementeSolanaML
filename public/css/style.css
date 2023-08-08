@@ -1,5 +1,15 @@
+ul {
+    list-style-type: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 481 px) {
+    .md-p-1 {
+        padding: 6px;
+    }
 }
 
 .encabezado {
