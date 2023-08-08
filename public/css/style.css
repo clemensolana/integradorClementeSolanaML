@@ -27,10 +27,6 @@ body {
     padding: 5px;
 }
 
-.yellow {
-
-}
-
 .blue {
     background-color: #03264C;
 }
@@ -41,33 +37,5 @@ body {
 
 main {
     background-color: #ebebeb;
-}
-
-.gray {
-
-}
-
-.green {
-
-}
-
-.normalText{
-
-}
-
-.bigText{
-    
-}
-
-.precio{
-    
-}
-
-.disccount{
-    
-}
-
-.descriptions{
-    
 }
 
