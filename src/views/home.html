@@ -34,19 +34,19 @@
 <body>
 
     <!-- Definimos un selector de clase que afectará al header -->
-    <header class="encabezado">
+    <header class="md-header">
 
         <!-- Usamos la siguiente imagen para el header -->
         <img width="320" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" srcset="">
 
         <!-- Menú de navegación: -->
-        <nav>
+        <nav class="nav-menu">
 
             <!-- Creo el lugar para buscar en el sitio web -->
-            <div class="topnav">
-                <input type="text" placeholder="Buscar productos, marcas"><i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar productos, marcas" class="topnav"><i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <p align="center"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            <p text-align="center"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
 
             <!-- Menú de navegación con links -->
             <ul>
@@ -70,14 +70,14 @@
 
             <!-- Creo el menú hamburguesa -->
             <div class="burger-menu i">
-        <i class="fa-solid fa-bars"></i>
-        </div>
+            <i class="fa-solid fa-bars"></i>
+            </div>
                            
         </nav>
     </header>
 
     <!-- Definimos otro selector de clase que afectará al Main -->
-    <main class="lightGray">
+    <main class="mainPage">
 
         <!-- Creo una sección -->
         <section>
@@ -177,29 +177,41 @@
     <footer>
 
         <!-- Se alíenan los textos y se definen los íconos y sus tamaños -->
-        <section align ="center">
+        <section class="bottom-icons">
+            <div class="icons">
             <i class="fa-solid fa-credit-card fa-2xl"></i>
+            </div>
+            <div class="text-icons">
             <h4>Pagá con tarjeta o en efectivo</h4>
             <p>
                  Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                 puntos de pago. ¡Y siempre es seguro!
             </p>
+            </div>
         </section>
 
-        <section align ="center">
+        <section class="bottom-icons">
+            <div class="icons">
             <i class="fa-solid fa-gift fa-2xl"></i>
+            </div>
+            <div class="text-icons">
             <h4>Envío gratis desde $ 2.500</h4>
             <p>
                 Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                 productos. Es un beneficio de Mercado Puntos.
             </p>
+            </div>
         </section>
         
-        <section align ="center">
+        <section class="bottom-icons">
+            <div class="icons">
             <i class="fa-solid fa-user-shield fa-2xl"></i>
+            </div>
+            <div class="text-icons">
             <h4>
                 Seguridad, de principio a fin
             </h4>
+            </div>
         </section>
 
             <p>
