@@ -34,22 +34,22 @@
 <body>
 
     <!-- Definimos un selector de clase que afectará al header -->
-    <header class="md-header">
+    <header class="top-header">
 
         <!-- Usamos la siguiente imagen para el header -->
-        <img width="320" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" srcset="">
+        <img width="50%" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" srcset="">
 
         <!-- Menú de navegación: -->
-        <nav class="nav-menu">
+        <nav class="navMenu">
 
             <!-- Creo el lugar para buscar en el sitio web -->
             <div class="search-box">
-                <input type="text" placeholder="Buscar productos, marcas" class="topnav"><i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar productos, marcas" class="searchBox"><i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <p text-align="center"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
 
             <!-- Menú de navegación con links -->
-            <ul>
+            <ul class="list">
                 <li><a href="#">Ofertas</a></li>
 
                 <li><a href="#">Tiendas Oficiales</a></li>
@@ -60,7 +60,7 @@
             </ul>
 
             <!-- Más menús -->
-            <ul>
+            <ul class="list">
                 <li><a href="#">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
 
                 <li><a href="#">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
@@ -83,44 +83,47 @@
         <section>
 
             <!-- Se usa un h2 para resaltar -->
-            <h2>
+            <h2 class="h-text">
                 Basado en tu última visita:
             </h2>
 
             <!-- Se definen artículos que se les da un tamaño determinado -->
             <article>
                 <img width="320" src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                <div>
-                    <p>$6.770</p>
-                    <p>40% off</p>
-                    <h3>Cafetera Moulinex</h3>
+                <div class="imgDescription">
+                    <div class="truck">
+                    <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <p class="prices">$6.770</p>
+                    <p class="disccounts">40% off</p>
+                    <h3 class="descriptions">Cafetera Moulinex</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
                 <div>
-                    <p>$230.000</p>
-                    <p>20% off</p>
-                    <h3>MacBook Pro 2019</h3>
+                    <p class="prices">$230.000</p>
+                    <p class="disccounts">20% off</p>
+                    <h3 class="descriptions">MacBook Pro 2019</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
                 <div>
-                    <p>$70.500</p>
-                    <p>10% off</p>
-                    <h3>Samsung Galaxy S10</h3>
+                    <p class="prices">$70.500</p>
+                    <p class="disccounts">10% off</p>
+                    <h3 class="descriptions">Samsung Galaxy S10</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
                 <div>
-                    <p>$23.200</p>
-                    <p>5% off</p>
-                    <h3>SmartTv Samsung 43"</h3>
+                    <p class="prices">$23.200</p>
+                    <p class="disccounts">5% off</p>
+                    <h3 class="descriptions">SmartTv Samsung 43"</h3>
                 </div>
             </article>
 
@@ -129,43 +132,43 @@
         <!-- Se crea otra sección pero de ofertas que se aplican las mismas propiedades -->
         <section>
 
-            <h2>
+            <h2 class="h-text">
                 Ofertas:
             </h2>
 
             <article>
                 <img width="320" src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
                 <div>
-                    <p>$6.770</p>
-                    <p>40% off</p>
-                    <h3>Cafetera Moulinex</h3>
+                    <p class="prices">$6.770</p>
+                    <p class="disccounts">40% off</p>
+                    <h3 class="descriptions">Cafetera Moulinex</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
                 <div>
-                    <p>$230.000</p>
-                    <p>20% off</p>
-                    <h3>MacBook Pro 2019</h3>
+                    <p class="prices">$230.000</p>
+                    <p class="disccounts">20% off</p>
+                    <h3 class="descriptions">MacBook Pro 2019</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
                 <div>
-                    <p>$70.500</p>
-                    <p>10% off</p>
-                    <h3>Samsung Galaxy S10</h3>
+                    <p class="prices">$70.500</p>
+                    <p class="disccounts">10% off</p>
+                    <h3 class="descriptions">Samsung Galaxy S10</h3>
                 </div>
             </article>
 
             <article>
                 <img width="320" src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
                 <div>
-                    <p>$23.200</p>
-                    <p>5% off</p>
-                    <h3>SmartTv Samsung 43"</h3>
+                    <p class="prices">$23.200</p>
+                    <p class="disccounts">5% off</p>
+                    <h3 class="descriptions">SmartTv Samsung 43"</h3>
                 </div>
             </article>
 

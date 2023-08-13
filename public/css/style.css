@@ -1,15 +1,101 @@
-.nav-menu {
+.searchBox {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navMenu{
 
 }
 
-.text-icons {
-    color: #666;
+.list {
+    list-style-type: none;
 }
-.text-icons h4 {
-    font-weight: bold;
+
+.burger-menu i{
+    text-align: center;
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
-.text-icons p {
-    font-size: 12px;
+.burger-menu {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.top-header{
+    background-color: #EAC926;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainPage {
+    background-color: #ebebeb;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainPage section article {
+    margin: 10px 0px;
+}
+
+
+
+.h-text{
+    font-size: 24px;
+}
+
+.prices{
+    font-size: 18px;
+}
+
+.disccounts{
+    font-size: 16px;
+    color: green;
+}
+
+.descriptions {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+@media (min-width: 481 px) {
+    .md-p-1 {
+        padding: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.imgDescription{
+    background-color: white;
+    width: 320px;
+    padding: 15px;
+}
+.truck {
+    border: 1px solid green;
+    color: green;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .bottom-icons {
@@ -21,54 +107,13 @@
     margin-bottom: 10px;
     color: #1259c3;
 }
-
-.topnav {
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-ul {
-    list-style-type: none;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-@media (min-width: 481 px) {
-    .md-p-1 {
-        padding: 6px;
-    }
-}
-
-.md-header {
-    background-color: #EAC926;
-}
-
-.burger-menu {
+.text-icons {
+    color: #666;
     text-align: center;
-    margin: 0;
-    padding: 20px;
 }
-
-.burger-menu i{
-    text-align: center;
-    background-color: #1259c3;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+.text-icons h4 {
+    font-weight: bold;
 }
-
-.blue {
-    background-color: #03264C;
+.text-icons p {
+    font-size: 12px;
 }
-
-.lightBlue {
-    color: #1259c3;
-}
-
-.mainPage {
-    background-color: #ebebeb;
-}
-
