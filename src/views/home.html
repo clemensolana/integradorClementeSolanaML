@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-    
-<head>
+  <head>
     <!-- Defino codificación -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- Defino escala de la página -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Conecto con las fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Uso la fuente Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Uso Font Awesome para íconos del sitio -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Conecto mi HTML con el archivo de CSS para los estilos -->
     <link rel="stylesheet" href="/css/style.css">
@@ -29,202 +34,268 @@
 
     <!-- Defino un título a mi página que se visualizará arriba -->
     <title>Mercado Liebre by Clemente Solana Silveira</title>
-</head>
+  </head>
 
-<body>
+  <!-- Body -->
+  <!-- Definimos un selector de clase que afectará al body para el color -->
+  <body class="bgLightgrey">
 
-    <!-- Definimos un selector de clase que afectará al header -->
-    <header class="top-header">
+    <!-- Header -->
+    <!-- Definimos un selector de clase que afectará al header para el color -->
+    <header class="bgYellow">
 
+    <!-- Definimos un selector de clase que afectará al header para alinear -->
+      <div class="topHeader">
+
+        <!-- Definimos un selector de clase que afectará al logo -->
+        <h1 class="logoML">    
         <!-- Usamos la siguiente imagen para el header -->
-        <img width="50%" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre" srcset="">
+          <img
+            src="/images/logo-mercado-liebre.svg"
+            alt="logo mercado liebre"
+          />
+        </h1>
 
-        <!-- Menú de navegación: -->
-        <nav class="navMenu">
+        <!-- Creo la barra de búsqueda -->
+        <div class="searchbar">
+          <input type="text" placeholder="Buscar productos, marcas" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+      </div>
 
-            <!-- Creo el lugar para buscar en el sitio web -->
-            <div class="search-box">
-                <input type="text" placeholder="Buscar productos, marcas" class="searchBox"><i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <p text-align="center"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+      <!-- MercadoCrédito -->
+      <p class="credit">
+        <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
+        tarjeta de crédito
+      </p>
 
-            <!-- Menú de navegación con links -->
-            <ul class="list">
-                <li><a href="#">Ofertas</a></li>
+      <!-- Menú de navegación con links -->
+      <nav>
+        <ul>
+        <li>
+            <a href="">Ofertas</a>
+        </li>
+        <li>
+            <a href="">Tiendas Oficiales</a>
+        </li>
+        <li>
+            <a href="">Vender</a>
+        </li>
+          <li><a href="">Ayuda</a></li>
+        </ul>
 
-                <li><a href="#">Tiendas Oficiales</a></li>
+        <!-- Más menús -->
+        <ul>
+          <li>
+            <a href="register.html">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+          </li>
+          <li>
+            <a href="login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
+          </li>
+          <li>
+            <a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
+          </li>
+        </ul>
 
-                <li><a href="#">Vender</a></li>
-
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-
-            <!-- Más menús -->
-            <ul class="list">
-                <li><a href="#">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
-
-                <li><a href="#">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
-
-                <li><a href="#">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-            </ul>
-
-            <!-- Creo el menú hamburguesa -->
-            <div class="burger-menu i">
-            <i class="fa-solid fa-bars"></i>
-            </div>
-                           
-        </nav>
+        <!-- Creo el menú hamburguesa -->
+        <div class="burger-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
-    <!-- Definimos otro selector de clase que afectará al Main -->
-    <main class="mainPage">
+    <!-- Main -->
+    <main>
 
-        <!-- Creo una sección -->
-        <section>
+    <!-- Definimos un selector de clases para la sección se usará más abajo nuevamente -->
+      <section class="cardSquare">
+        <h2>Basado en tu última visita</h2>
 
-            <!-- Se usa un h2 para resaltar -->
-            <h2 class="h-text">
-                Basado en tu última visita:
-            </h2>
+        <!-- Definimos un selector de clases para el artículo se usará más abajo nuevamente -->
+        <article class="card">
+          <img
+            src="/images/img-cafetera-moulinex.jpg"
+            alt="Cafetera moulinex"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$6.770</p>
+              <p class="cardDescriptionDiscount">40% off</p>
+            </div>
+            <h3>Cafetera Moulinex</h3>
+          </div>
+        </article>
 
-            <!-- Se definen artículos que se les da un tamaño determinado -->
-            <article>
-                <img width="320" src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                <div class="imgDescription">
-                    <div class="truck">
-                    <i class="fa-solid fa-truck"></i>
-                    </div>
-                    <p class="prices">$6.770</p>
-                    <p class="disccounts">40% off</p>
-                    <h3 class="descriptions">Cafetera Moulinex</h3>
-                </div>
-            </article>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img src="/images/img-macbook-pro-2019.jpg" alt="macbook pro 2019" />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$230.000</p>
+              <p class="cardDescriptionDiscount">20% off</p>
+            </div>
+            <h3>MacBook Pro 2019</h3>
+          </div>
+        </article>
 
-            <article>
-                <img width="320" src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
-                <div>
-                    <p class="prices">$230.000</p>
-                    <p class="disccounts">20% off</p>
-                    <h3 class="descriptions">MacBook Pro 2019</h3>
-                </div>
-            </article>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img
+            src="/images/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$70.500</p>
+              <p class="cardDescriptionDiscount">10% off</p>
+            </div>
+            <h3>Samsung Galaxy S10</h3>
+          </div>
+        </article>
 
-            <article>
-                <img width="320" src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-                <div>
-                    <p class="prices">$70.500</p>
-                    <p class="disccounts">10% off</p>
-                    <h3 class="descriptions">Samsung Galaxy S10</h3>
-                </div>
-            </article>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img
+            src="/images/img-tv-samsung-smart.jpg"
+            alt="SmartTv Samsung 43"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$23.200</p>
+              <p class="cardDescriptionDiscount">5% off</p>
+            </div>
+            <h3>SmartTv Samsung 43"</h3>
+          </div>
+        </article>
+      </section>
 
-            <article>
-                <img width="320" src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-                <div>
-                    <p class="prices">$23.200</p>
-                    <p class="disccounts">5% off</p>
-                    <h3 class="descriptions">SmartTv Samsung 43"</h3>
-                </div>
-            </article>
+      <!-- Otra sección que repite clase -->
+      <section class="cardSquare">
+        <h2>Ofertas</h2>
 
-        </section>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img
+            src="/images/img-cafetera-moulinex.jpg"
+            alt="Cafetera moulinex"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$6.770</p>
+              <p class="cardDescriptionDiscount">40% off</p>
+            </div>
+            <h3>Cafetera Moulinex</h3>
+          </div>
+        </article>
 
-        <!-- Se crea otra sección pero de ofertas que se aplican las mismas propiedades -->
-        <section>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img src="/images/img-macbook-pro-2019.jpg" alt="macbook pro 2019" />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$230.000</p>
+              <p class="cardDescriptionDiscount">20% off</p>
+            </div>
+            <h3>MacBook Pro 2019</h3>
+          </div>
+        </article>
 
-            <h2 class="h-text">
-                Ofertas:
-            </h2>
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img
+            src="/images/img-samsung-galaxy-s10.jpg"
+            alt="Samsung Galaxy S10"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$70.500</p>
+              <p class="cardDescriptionDiscount">10% off</p>
+            </div>
+            <h3>Samsung Galaxy S10</h3>
+          </div>
+        </article>
 
-            <article>
-                <img width="320" src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex">
-                <div>
-                    <p class="prices">$6.770</p>
-                    <p class="disccounts">40% off</p>
-                    <h3 class="descriptions">Cafetera Moulinex</h3>
-                </div>
-            </article>
-
-            <article>
-                <img width="320" src="/images/img-macbook-pro-2019.jpg" alt="img-macbook-pro-2019">
-                <div>
-                    <p class="prices">$230.000</p>
-                    <p class="disccounts">20% off</p>
-                    <h3 class="descriptions">MacBook Pro 2019</h3>
-                </div>
-            </article>
-
-            <article>
-                <img width="320" src="/images/img-samsung-galaxy-s10.jpg" alt="img-samsung-galaxy-s10">
-                <div>
-                    <p class="prices">$70.500</p>
-                    <p class="disccounts">10% off</p>
-                    <h3 class="descriptions">Samsung Galaxy S10</h3>
-                </div>
-            </article>
-
-            <article>
-                <img width="320" src="/images/img-tv-samsung-smart.jpg" alt="img-tv-samsung-smart">
-                <div>
-                    <p class="prices">$23.200</p>
-                    <p class="disccounts">5% off</p>
-                    <h3 class="descriptions">SmartTv Samsung 43"</h3>
-                </div>
-            </article>
-
-        </section>
-
+        <!-- Más artículos que repite clase -->
+        <article class="card">
+          <img
+            src="/images/img-tv-samsung-smart.jpg"
+            alt="SmartTv Samsung 43"
+          />
+          <div class="cardDescription">
+            <div class="cardShipmentIcon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="cardDescriptionValue">
+              <p class="cardDescriptionPrice">$23.200</p>
+              <p class="cardDescriptionDiscount">5% off</p>
+            </div>
+            <h3>SmartTv Samsung 43"</h3>
+          </div>
+        </article>
+      </section>
     </main>
 
-    <!--  -->
-    <footer>
 
-        <!-- Se alíenan los textos y se definen los íconos y sus tamaños -->
-        <section class="bottom-icons">
-            <div class="icons">
-            <i class="fa-solid fa-credit-card fa-2xl"></i>
-            </div>
-            <div class="text-icons">
-            <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>
-                 Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!
-            </p>
-            </div>
-        </section>
+<!-- Footer -->
+<!-- Creo un selector de clase para el fondo del footer -->
+<footer class="bgWhite">
 
-        <section class="bottom-icons">
-            <div class="icons">
-            <i class="fa-solid fa-gift fa-2xl"></i>
-            </div>
-            <div class="text-icons">
-            <h4>Envío gratis desde $ 2.500</h4>
-            <p>
-                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.
-            </p>
-            </div>
-        </section>
-        
-        <section class="bottom-icons">
-            <div class="icons">
-            <i class="fa-solid fa-user-shield fa-2xl"></i>
-            </div>
-            <div class="text-icons">
-            <h4>
-                Seguridad, de principio a fin
-            </h4>
-            </div>
-        </section>
+    <!-- Creo un selector de clase que se utilizará más abajo en las secciones -->
 
-            <p>
-                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.<br>
-                <br>
-                Copyright © 1999-2020 MercadoLiebre S.R.L.
-            </p>
+    <!-- Otra sección que repite clase2 -->
+      <section class="theBenefits">
+        <div><i class="fa-solid fa-credit-card"></i></div>
+        <h4>Pagá con tarjeta o en efectivo</h4>
+        <p>
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </section>
 
+    <!-- Otra sección que repite clase2 -->
+      <section class="theBenefits">
+        <div><i class="fa-solid fa-gift"></i></div>
+        <h4>Envío gratis desde $ 2.500</h4>
+        <p>
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </section>
+
+    <!-- Otra sección que repite clase2 -->
+      <section class="theBenefits">
+        <div><i class="fa-solid fa-user-shield"></i></div>
+        <h4>Seguridad, de principio a fin</h4>
+        <p>
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.
+        </p>
+      </section>
+
+      <!-- Copyright -->
+      <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </footer>
-
-</body>
+  </body>
 </html>

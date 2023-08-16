@@ -1,119 +1,318 @@
-.searchBox {
+/*Estilos aplicables a home.html*/
+
+/* Defino los colores y tamaños de letra a nivel global*/
+:root {
+    /* Tamaños de font */
+    --font-12: 12px;
+    --font-16: 16px;
+    --font-18: 18px;
+    --font-24: 24px;
+
+    /* Paleta de colores */
+    --yellow: #eac926;
+    --white: #ffffff;
+    --lightgrey: #ebebeb;
+    --blue: #03264c;
+    --green: #39b54a;
+    --lightblue: #1259c3;
+    --darkgrey: #666666;
+  }
+
+/* Fondos - bg */
+.bgLightgrey {
+    background-color: var(--lightgrey);
+  }
+
+.bgYellow {
+    background-color: var(--yellow);
+  }
+  
+.bgWhite {
+    background-color: var(--white);
+  }
+
+/* Header */
+.topHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 0 20px;
+    gap: 15px;
+  }
+
+/* Elementos del header */
+
+.logoML {
+    width: 50%;
+  }
+.logoML img {
+    width: 100%;
+    right: 50px;
+  }
+
+.searchbar {
+    position: relative;
+    width: 50%;
+  }
+.searchbar input {
     border: none;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.navMenu{
-
-}
-
-.list {
-    list-style-type: none;
-}
-
-.burger-menu i{
-    text-align: center;
-    background-color: #1259c3;
-    color: white;
-    padding: 10px;
     border-radius: 5px;
-}
-.burger-menu {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+.searchbar i {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    color: var(--darkgrey);
+  }
+.searchbar input:hover {
+    overflow: visible;
+  }
+  
+.credit {
+    margin-top: 15px;
     text-align: center;
-    margin: 0;
-    padding: 20px;
-}
+    font-size: var(--font-12);
+    margin-bottom: 5px;
+  }
+  
+nav {
+    display: flex;
+    flex-direction: column;
+  }
+nav ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+nav ul li a {
+    color: black;
+    font-size: var(--font-12);
+    text-decoration: none;
+  }
+  
+.burger-menu {
+    padding: 12px;
+    border: none;
+    display: inline-flex;
+    border-radius: 5px;
+    color: white;
+    font-size: var(--font-24);
+    text-align: center;
+    margin: 20px auto;
+    background-color: var(--lightblue);
+  }
 
-.top-header{
-    background-color: #EAC926;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.mainPage {
-    background-color: #ebebeb;
-    padding: 10%;
+/* Main */
+main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+.cardSquare h2 {
+    color: var(--darkgrey);
+    font-size: var(--font-24);
+    margin: 20px 0 20px 0;
+  }
+  
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 0 15px 0 15px;
+    margin: 10px 0 10px;
+  }
+.card img {
+    width: 90%;
+    margin: auto;
+  }
+  
+.cardDescription {
+    position: relative;
+    border-top: 1px solid var(--lightgrey);
+    padding: 20px 0 20px 0;
+    position: relative;
+  }
+.cardDescription h3 {
+    margin-top: 20px;
+    font-size: var(--font-16);
+    font-weight: 400;
+    color: var(--darkgrey);
+  }
+  
+.cardDescriptionValue {
+    display: flex;
+    text-align: start;
+    align-items: baseline;
+  }
+  
+.cardDescriptionPrice {
+    font-size: var(--font-18);
+    flex-grow: 3;
+  }
+  
+.cardDescriptionDiscount {
+    font-size: var(--font-16);
+    color: var(--green);
+    flex-grow: 7;
+  }
+  
+.cardShipmentIcon {
+    display: block;
+    font-size: var(--font-16);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--green);
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+  }
+.cardShipmentIcon i {
+    color: var(--green);
+  }
+  
+/* Footer */
+footer {
+    margin-top: 20px;
+  }
+  
+.theBenefits {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.mainPage section article {
-    margin: 10px 0px;
-}
-
-
-
-.h-text{
-    font-size: 24px;
-}
-
-.prices{
-    font-size: 18px;
-}
-
-.disccounts{
-    font-size: 16px;
-    color: green;
-}
-
-.descriptions {
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-
-
-
-
-
-
-@media (min-width: 481 px) {
-    .md-p-1 {
-        padding: 6px;
-    }
-}
-
-
-
-
-
-
-
-
-
-.imgDescription{
-    background-color: white;
-    width: 320px;
-    padding: 15px;
-}
-.truck {
-    border: 1px solid green;
-    color: green;
-    padding: 10px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.bottom-icons {
-    padding: 30px;
     text-align: center;
-
-}
-.icons {
+    padding: 50px 20px 0 20px;
+  }
+.theBenefits i {
+    font-size: 2em;
     margin-bottom: 10px;
-    color: #1259c3;
-}
-.text-icons {
-    color: #666;
-    text-align: center;
-}
-.text-icons h4 {
-    font-weight: bold;
-}
-.text-icons p {
-    font-size: 12px;
-}
+    color: var(--lightblue);
+  }
+.theBenefits h4 {
+    font-size: var(--font-18);
+    color: var(--darkgrey);
+  }
+.theBenefits p {
+    font-size: var(--font-12);
+    color: var(--darkgrey);
+  }
+  
+.copyright {
+    font-size: var(--font-12);
+    color: var(--darkgrey);
+    padding: 50px 20px 20px 20px;
+  }
+  
+/* Mobile */
+  @media (max-width: 520px) {
+    /* Header */
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    /* Main */
+    /* Soluciono problema en barra de búsqueda que hace zoom
+    en safari y chrome 4mobile al tocar y querer ingresar texto
+    agrandando la letra a 16*/
+    .searchbar input {
+        font-size: var(--font-16);
+      }
+  }
+
+/* Tablet */
+  @media (min-width: 768px) {
+    /* Header */
+    .header-container {
+      gap: 20px;
+    }
+  
+    .logo {
+      width: 30%;
+    }
+  
+    .searchbar {
+      width: 30%;
+    }
+    .searchbar i {
+      /* left: 290px; */
+      /* flex: auto; */
+      flex: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .burger-menu {
+      display: none;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 30px 10px 30px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+  
+    /* Main */
+    .cardSquare {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .cardSquare h2 {
+      width: 100%;
+    }
+  
+    .card {
+      width: 48%;
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  
+    /* Footer */
+    .copyright {
+      padding-left: 40px;
+    }
+  }
+  
+/* Desktop */
+  @media (min-width: 1025px) {
+    /* Header */
+    .credit {
+    margin-top: 0px;
+  }
+
+    /* Main */
+    .card {
+      width: 22%;
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+  }
+
+
+/* Extras que agregué buscando información + chatgtp:
+Margin auto: https://www.w3schools.com/Css/css_margin.asp
+Root-var en css: https://www.w3schools.com/css/css3_variables.asp recomendado por chatgpt 
+Gap: https://www.w3schools.com/cssref/css3_pr_gap.php
+@media: clases en vivo + https://developer.mozilla.org/es/docs/Web/CSS/@media
+Display: https://developer.mozilla.org/es/docs/Web/CSS/display
+Text Overflow: https://stackoverflow.com/questions/31120322/how-to-prevent-text-to-overlap-the-image
+https://www.w3schools.com/cssref/css3_pr_text-overflow.php
+Pseudo clases y elementos: https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+Flex-Box: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ & https://flexboxfroggy.com/#es
+HV: https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks
+*/
