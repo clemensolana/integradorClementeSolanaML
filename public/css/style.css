@@ -109,6 +109,12 @@ nav ul li a {
     background-color: var(--lightblue);
   }
 
+.christmas{
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
 /* Main */
 main {
     width: 90%;
@@ -183,14 +189,18 @@ main {
 /* Footer */
 footer {
     margin-top: 20px;
+    padding-bottom: 40px;
   }
   
 .theBenefits {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 50px 20px 0 20px;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
   }
 .theBenefits i {
     font-size: 2em;
@@ -219,6 +229,26 @@ footer {
       display: none;
       flex-direction: column;
     }
+    /* Header */
+    .credit {
+      text-align: center;
+      position: absolute;
+      padding-top: 100px;
+      font-size: var(--font-16);
+      width: 100%;
+      }
+      .logoML{
+      width: 50%;
+      }
+      .searchbar{
+      width: 50%;
+      }
+      .searchbar i {
+      background-color: white;
+      }
+      .burger-menu{
+      margin-top: 60px;
+      }
   
     /* Main */
     /* Soluciono problema en barra de búsqueda que hace zoom
@@ -227,6 +257,11 @@ footer {
     .searchbar input {
         font-size: var(--font-16);
       }
+
+    /* Footer */
+    .theBenefits p {
+      font-size: var(--font-16);
+    }
   }
 
 /* Tablet */
@@ -285,7 +320,7 @@ footer {
   
     /* Footer */
     .copyright {
-      padding-left: 40px;
+      justify-content: left;
     }
   }
   
@@ -294,13 +329,41 @@ footer {
     /* Header */
     .credit {
     margin-top: 0px;
-  }
+    margin-bottom: 5px;
+    text-align: left;
+    width: 30%;
+    }
+    .logoML{
+    width: 50%;
+    }
+    .searchbar{
+    width: 50%;
+    }
 
     /* Main */
     .card {
       width: 22%;
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .card:hover .cardDescription h3{
+      display: block;
+    }
+    .cardDescription h3{
+      display: none;
+    }
+
+    /* Footer */
+    footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding-bottom: 80px;
+    }
+    .copyright {
+      position: absolute;
+      padding-top: 180px;
+    }
+    
   }
 
 
