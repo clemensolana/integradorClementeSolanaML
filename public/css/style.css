@@ -52,11 +52,11 @@
     right: 50px;
   }
 
-.searchbar {
-    position: relative;
-    width: 50%;
-  }
-.searchbar input {
+.searchNav{
+  position: relative;
+  width: 50%;
+}
+.searchNav input {
     border: none;
     border-radius: 5px;
     width: 100%;
@@ -66,13 +66,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-.searchbar i {
+.searchNav i {
     right: 10px;
     top: 10px;
     position: absolute;
     color: var(--darkgrey);
   }
-.searchbar input:hover {
+.searchNav input:hover {
     overflow: visible;
   }
   
@@ -185,7 +185,173 @@ main {
 .cardShipmentIcon i {
     color: var(--green);
   }
+
+/* Main LOGIN */
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.user label{
+  font-size: var(--font-16);
+}
+.user input{
+  font-size: var(--font-16);
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+}
+.pass label {
+  font-size: var(--font-16);
+}
+.pass input{
+  font-size: var(--font-16);
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+}
+.rememberUserAndPass{
+  font-size: var(--font-16);
+}
+.tapToLogin{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--lightblue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.createUser{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;  
+}
+.createUser a{
+  color: black;
+  font-size: var(--font-16);
+  text-decoration: none;
+}
+
+/* Main Register */
+.fullName label{
+  font-size: var(--font-16);
+}
+.fullName input{
+  font-size: var(--font-16);
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+}
+.dateOfBirth p{
+  font-weight: bold;
+  font-size: var(--font-18);
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+.dateOfBirth input{
+  font-size: var(--font-16);
+  border-radius: 10px;
+  border-style: none;
+  color: var(--darkgrey);
+  padding: 5px;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.adress input{
+  font-size: var(--font-16);
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+.userProfile{
+  font-size: var(--font-16);
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+.userProfile p{
+  font-weight: bold;
+  font-size: var(--font-18);
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+.logUser{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;  
+}
+.logUser a{
+  color: black;
+  font-size: var(--font-16);
+  text-decoration: none;
+}
+
+.preferences{
+  font-size: var(--font-16);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: -95px;
+}
+.preferences p{
+  font-weight: bold;
+  font-size: var(--font-18);
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+.preferences input{
   
+}
+
+.picture input{
+  font-size: var(--font-16);
+  margin-bottom: 20px;
+}
+
+.tapToRegister{
+  padding: 10px;
+  background-color: var(--lightblue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+.tapToReset{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--lightblue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+
 /* Footer */
 footer {
     margin-top: 20px;
@@ -233,17 +399,17 @@ footer {
     .credit {
       text-align: center;
       position: absolute;
-      padding-top: 100px;
+      margin-top: 110px;
       font-size: var(--font-16);
       width: 100%;
       }
       .logoML{
       width: 50%;
       }
-      .searchbar{
+      .searchNav{
       width: 50%;
       }
-      .searchbar i {
+      .searchNav i {
       background-color: white;
       }
       .burger-menu{
@@ -254,7 +420,7 @@ footer {
     /* Soluciono problema en barra de búsqueda que hace zoom
     en safari y chrome 4mobile al tocar y querer ingresar texto
     agrandando la letra a 16*/
-    .searchbar input {
+    .searchNav input {
         font-size: var(--font-16);
       }
 
@@ -275,10 +441,10 @@ footer {
       width: 30%;
     }
   
-    .searchbar {
+    .searchNav {
       width: 30%;
     }
-    .searchbar i {
+    .searchNav i {
       /* left: 290px; */
       /* flex: auto; */
       flex: auto;
@@ -336,7 +502,7 @@ footer {
     .logoML{
     width: 50%;
     }
-    .searchbar{
+    .searchNav{
     width: 50%;
     }
 

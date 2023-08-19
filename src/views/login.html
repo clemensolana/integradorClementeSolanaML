@@ -2,17 +2,20 @@
 <html lang="es">
   <head>
     <!-- Defino codificación -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     <!-- Defino escala de la página -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Conecto con las fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Uso la fuente Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Uso Font Awesome para íconos del sitio -->
     <link
@@ -47,25 +50,31 @@
         <!-- Definimos un selector de clase que afectará al logo -->
         <h1 class="logoML">    
         <!-- Usamos la siguiente imagen para el header -->
-          <img
+          <a href="/">
+            <img
             src="/images/logo-mercado-liebre.svg"
             alt="logo mercado liebre"
-          />
+            />
+          </a>
         </h1>
 
         <!-- Creo la barra de búsqueda -->
-        <div class="searchbar">
-          <input type="text" placeholder="Buscar productos, marcas" />
+        <form class="searchNav" action="" method="" role="search">
+          <input type="text" placeholder="Buscar productos, marcas y más…" 
+          maxlength="120" autocapitalize="off" spellcheck="false" 
+          autocomplete="off"  />
           <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+        </form>
+
+        <!-- MercadoCrédito -->
+        <p class="credit">
+          <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
+          tarjeta de crédito
+        </p>
         
       </div>
 
-      <!-- MercadoCrédito -->
-      <p class="credit">
-        <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
-        tarjeta de crédito
-      </p>
+      
 
       <!-- Menú de navegación con links -->
       <nav>
@@ -100,11 +109,33 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
+
+        <!-- Imagen navidad promociones -->
+      <img class="christmas"
+            src="/images/img-home-banner.jpg"
+            alt="img-home-banner"
+          />
     </header>
 
     <!-- Main -->
     <main>
-
+      <form action="/">
+        <div class="user">
+          <label for="userName"></label>
+          <input type="text" name="userName" id="userName" placeholder="Nombre de usuari@" required>
+        </div>
+        <div class="pass">
+          <label for="passW"></label>
+          <input type="password" name="passW" id="passW" placeholder="Ingresá tu contraseña" required>
+        </div>
+        <label class="rememberUserAndPass">
+        <input type="checkbox" name="rememberMe" value="yesRemember"> Recordar usuario y contraseña
+        </label>
+        <button class="tapToLogin" type="submit">Enviar</button>
+      </form>
+      <section class="createUser">
+        <a href="register.html">¿Primera vez? Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+      </section>
     </main>
 
 
