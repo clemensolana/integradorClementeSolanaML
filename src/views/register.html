@@ -110,58 +110,83 @@
         </div>
       </nav>
 
-        <!-- Imagen navidad promociones -->
-      <img class="christmas"
+        <!-- Imagen navidad promociones la comento para que no aparezca -->
+      <!-- <img class="christmas"
             src="/images/img-home-banner.jpg"
             alt="img-home-banner"
-          />
+          /> -->
     </header>
 
     <!-- Main -->
     <main>
+
+      <!-- Creo el formulario -->
       <form action="/">
+
+        <!-- Creo el div con clase fullName para apellido y nombre -->
         <div class="fullName">
           <label for="nameAndLastname"></label>
-          <input type="text" name="nameAndLastname" id="nameAndLastname" placeholder="Nombre y apellido" required>
+          <input type="text" name="nameAndLastname" id="nameAndLastname" placeholder="Nombre y apellido" required minlength="2" maxlength="30">
         </div>
+
+        <!-- Creo el div con clase user para el usuario -->
         <div class="user">
           <label for="userName"></label>
-          <input type="text" name="userName" id="userName" placeholder="Nombre de usuari@" required>
+          <input type="text" name="userName" id="userName" placeholder="Nombre de usuari@" required minlength="5" maxlength="12">
         </div>
+
+        <!-- Creo el div con clase dateOfBirth para la fecha -->
         <div class="dateOfBirth">
           <p>Fecha de nacimiento</p>
           <input type="date" name="birthDate" value="1994-11-19" min="1900-01-01" max="2005-08-19">
         </div>
+
+        <!-- Creo el div con clase adress para la para el domicilio -->
         <div class="adress">
-          <input type="text" name="homeAdress" id="homeAdress" placeholder="Domicilio" required>
+          <input type="text" name="homeAdress" id="homeAdress" placeholder="Domicilio" required minlength="2" maxlength="30">
         </div>
+
+        <!-- Creo el label con clase userProfile para el Perfil del usuario -->
         <label class="userProfile">
-          <p>Perfil del usuario</p>
-          <input type="radio" name="profile" value="buyer">Comprador
-          <input type="radio" name="profile" value="seller">Vendedor
+          <p class="prof">Perfil del usuario</p>
+          <input type="radio" name="profile" value="buyer"><p class="personBuyerSeller">Comprador</p>
+          <input type="radio" name="profile" value="seller"><p class="personBuyerSeller">Vendedor</p>
         </label>
+
+        <!-- Creo el label con clase preferences para los Intereses -->
         <label class="preferences">
-          <p>Intereses</p>
-          <input type="checkbox" name="profile" value="buyer">Electro
-          <input type="checkbox" name="profile" value="seller">Moda
-          <input type="checkbox" name="profile" value="buyer">Hogar
-          <input type="checkbox" name="profile" value="seller">Juguetería
-          <input type="checkbox" name="profile" value="seller">Vida sana
+          <p class="userInterest">Intereses</p>
+          <input type="checkbox" name="preferences" value="Electro">Electro
+          <input type="checkbox" name="preferences" value="Moda">Moda
+          <input type="checkbox" name="preferences" value="Hogar">Hogar
+          <input type="checkbox" name="preferences" value="Juguetería">Juguetería
+          <input type="checkbox" name="preferences" value="Vida sana">Vida sana
         </label>
+
+        <!-- Creo el div con clase picture para la imagen de perfil -->
         <div class="picture">
           <input type="file" name="profilePicture" accept=".jpg">
         </div>
+
+        <!-- Creo el div con clase pass para la contraseña -->
         <div class="pass">
           <label for="passW"></label>
-          <input type="password" name="passW" id="passW" placeholder="Ingresá tu contraseña" required>
+          <input type="password" name="passW" id="passW" placeholder="Ingresá tu contraseña" required minlength="5" maxlength="12">
         </div>
         <div class="pass">
           <label for="passW"></label>
-          <input type="password" name="passW" id="passW" placeholder="Reingresá tu contraseña" required>
+          <input type="password" name="passW" id="passW" placeholder="Reingresá tu contraseña" required minlength="5" maxlength="12">
         </div>
+
+        <!-- Creo un botón para "enviar" que por el momento lleva a home -->
         <button class="tapToRegister" type="submit">Enviar</button>
+
+        <!-- Creo un botón reset para eliminar todo -->
         <button class="tapToReset" type="reset">Borrar</button>
+
       </form>
+
+      <!-- Agrego un link para ir a formulario de login en caso de equivocación -->
       <section class="logUser">
         <a href="login.html">¿Ya tenés una cuenta? Ingresá aquí<i class="fa-solid fa-right-to-bracket"></i></a>
       </section>
