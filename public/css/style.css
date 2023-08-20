@@ -665,6 +665,13 @@ footer {
       font-size: var(--font-18);
       margin-bottom: 20px;
     }
+    .preferences {
+      margin-left: -75px;
+      display: inline-block;
+    }
+    .prefSpace {
+      margin-right: 10px;
+    }
     .picture {
       margin-top: 20px;
       margin-bottom: 20px;
