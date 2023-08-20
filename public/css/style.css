@@ -715,6 +715,12 @@ footer {
     .card {
       width: 22%;
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    .card:hover{
+      width: 25%;
+      box-shadow: 0px 0px 30px rgb(1, 1, 1);
     }
     .card:hover .cardDescription h3{
       display: block;
@@ -722,17 +728,60 @@ footer {
     .cardDescription h3{
       display: none;
     }
+    .cardShipmentIcon {
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    .cardShipmentIcon:hover {
+      transform: rotateZ(-90deg);
+    }
+
+    /* Main LOGIN */
+    
+    .tapToLogin {
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    .tapToLogin:hover {
+      background-color: #0022AA;
+    }
+
+    /* Main Register */
+
+    .tapToRegister {
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    .tapToRegister:hover {
+      background-color: #0022AA;
+    }
+    .tapToReset {
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    .tapToReset:hover {
+      background-color: #0022AA;
+    }
 
     /* Footer */
     footer {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      padding-bottom: 80px;
+      padding-bottom: 120px;
     }
     .copyright {
       position: absolute;
-      padding-top: 180px;
+      margin-top: 180px;
+    }
+
+    .theBenefits i {
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+
+    .theBenefits i:hover {
+      color: #0022AA;
     }
     
   }
