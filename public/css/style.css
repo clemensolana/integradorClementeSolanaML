@@ -186,6 +186,10 @@ main {
   }
 
 /* Main LOGIN */
+.topHeader {
+  position: relative;
+}
+
 form{
   display: flex;
   flex-direction: column;
@@ -418,7 +422,7 @@ footer {
   }
   
 /* Mobile */
-  @media (max-width: 499px) {
+  @media (max-width: 767.98px) {
     /* Header */
 
     nav ul {
@@ -429,97 +433,7 @@ footer {
     .credit {
       text-align: center;
       position: absolute;
-      margin-top: 110px;
-      font-size: var(--font-16);
-      width: 100%;
-      }
-      .logoML{
-      width: 50%;
-      }
-      .searchNav{
-      width: 50%;
-      }
-      .searchNav i {
-      background-color: white;
-      }
-      .burger-menu{
-      margin-top: 60px;
-      }
-  
-    /* Main */
-    
-    /* Soluciono problema en barra de búsqueda que hace zoom
-    en safari y chrome 4mobile al tocar y querer ingresar texto
-    agrandando la letra a 16*/
-    .searchNav input {
-        font-size: var(--font-16);
-      }
-
-    /* Footer */
-    .theBenefits p {
-      font-size: var(--font-16);
-    }
-  }
-
-  /* Mobile 2 */
-  @media (min-width: 500px) and (max-width: 590px) {
-
-    /* Header */
-
-    nav ul {
-      display: none;
-      flex-direction: column;
-    }
-
-    .credit {
-      text-align: center;
-      position: absolute;
-      margin-top: 130px;
-      font-size: var(--font-16);
-      width: 100%;
-      }
-    .logoML{
-      width: 50%;
-    }
-    .searchNav{
-      width: 50%;
-    }
-    .searchNav i {
-      background-color: white;
-    }
-    .burger-menu{
-      margin-top: 60px;
-    }
-  
-    /* Main */
-    
-    /* Soluciono problema en barra de búsqueda que hace zoom
-    en safari y chrome 4mobile al tocar y querer ingresar texto
-    agrandando la letra a 16*/
-    .searchNav input {
-        font-size: var(--font-16);
-      }
-
-    /* Footer */
-    .theBenefits p {
-      font-size: var(--font-16);
-    }
-  }
-
-  /* Mobile 3 */
-  @media (min-width: 591px) and (max-width: 767px) {
-
-    /* Header */
-
-    nav ul {
-      display: none;
-      flex-direction: column;
-    }
-
-    .credit {
-      text-align: center;
-      position: absolute;
-      margin-top: 150px;
+      top: 100%;
       font-size: var(--font-16);
       width: 100%;
       }
