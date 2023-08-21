@@ -689,7 +689,7 @@ footer {
     .card {
       width: 22%;
       box-shadow: 0px 0px 10px rgb(100, 100, 100);
-      transition-duration: 1s;
+      transition-duration: 300ms;
       transition-timing-function: linear;
     }
     .card:hover{
@@ -703,7 +703,7 @@ footer {
       display: none;
     }
     .cardShipmentIcon {
-      transition-duration: 1s;
+      transition-duration: 300ms;
       transition-timing-function: linear;
     }
     .cardShipmentIcon:hover {
@@ -713,7 +713,7 @@ footer {
     /* Main LOGIN */
     
     .tapToLogin {
-      transition-duration: 1s;
+      transition-duration: 500ms;
       transition-timing-function: linear;
     }
     .tapToLogin:hover {
@@ -723,14 +723,14 @@ footer {
     /* Main Register */
 
     .tapToRegister {
-      transition-duration: 1s;
+      transition-duration: 500ms;
       transition-timing-function: linear;
     }
     .tapToRegister:hover {
       background-color: #0022AA;
     }
     .tapToReset {
-      transition-duration: 1s;
+      transition-duration: 500ms;
       transition-timing-function: linear;
     }
     .tapToReset:hover {
@@ -751,7 +751,7 @@ footer {
     }
 
     .theBenefits i {
-      transition-duration: 1s;
+      transition-duration: 500ms;
       transition-timing-function: linear;
     }
 
