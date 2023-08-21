@@ -360,7 +360,7 @@ form{
   opacity: 0;
   display: block;
   width: 250px;
-  height: 45px;
+  height: 20px;
 }
 
 .tapToRegister{
@@ -615,7 +615,7 @@ footer {
     }
     .picture {
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .picture label {
       width: 500px;
@@ -624,7 +624,7 @@ footer {
     
     .picture input[type="file"] {
       width: 500px;
-      height: 45px;
+      height: 20px;
     }
     .tapToRegister{
       padding: 6px;
@@ -725,11 +725,12 @@ footer {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      padding-bottom: 120px;
+      padding-bottom: 100px;
+      position: relative;
     }
     .copyright {
       position: absolute;
-      margin-top: 180px;
+      top: 60%
     }
 
     .theBenefits i {
