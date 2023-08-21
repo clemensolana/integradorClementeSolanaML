@@ -362,6 +362,7 @@ form{
 .tapToRegister{
   padding: 10px;
   background-color: var(--lightblue);
+  font-size: var(--font-16);
   color: var(--white);
   border: none;
   font-weight: bold;
@@ -372,6 +373,7 @@ form{
   margin-top: 20px;
   padding: 10px;
   background-color: var(--lightblue);
+  font-size: var(--font-16);
   color: var(--white);
   font-weight: bold;
   border: none;
