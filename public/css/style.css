@@ -189,8 +189,6 @@ main {
 form{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -204,7 +202,7 @@ form{
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 5px;
-  width: 100%;
+  width: 250px;
 }
 .pass label {
   font-size: var(--font-16);
@@ -215,7 +213,7 @@ form{
   border-style: none;
   margin-bottom: 20px;
   padding: 5px;
-  width: 100%;
+  width: 250px;
 }
 .rememberUserAndPass{
   font-size: var(--font-16);
@@ -227,8 +225,9 @@ form{
   background-color: var(--lightblue);
   color: var(--white);
   border: none;
+  font-weight: bold;
   border-radius: 10px;
-  width: 191.82px;
+  width: 250px;
 }
 
 .createUser{
@@ -247,6 +246,9 @@ form{
 }
 
 /* Main Register */
+
+/* Tomo estructura form de Main Login */
+
 .fullName label{
   font-size: var(--font-16);
 }
@@ -256,12 +258,12 @@ form{
   border-style: none;
   margin-top: 20px;
   padding: 5px;
-  width: 100%;
+  width: 250px;
 }
 .dateOfBirth p{
   font-weight: bold;
   font-size: var(--font-18);
-  margin-right: 25px;
+  width: 250px;
   margin-bottom: 10px;
 }
 .dateOfBirth input{
@@ -270,7 +272,7 @@ form{
   border-style: none;
   color: var(--darkgrey);
   padding: 5px;
-  width: 100%;
+  width: 250px;
   background-color: var(--white);
 }
 
@@ -281,14 +283,15 @@ form{
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 5px;
-  width: 100%;
+  width: 250px;
 }
 
 .userProfile{
   font-size: var(--font-16);
   margin-bottom: 20px;
-  margin-left: -5px;
+  width: 250px;
 }
+
 .prof{
   font-weight: bold;
   font-size: var(--font-18);
@@ -321,7 +324,7 @@ form{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: -95px;
+  width: 250px;
 }
 .userInterest{
   font-weight: bold;
@@ -331,9 +334,29 @@ form{
 }
 
 
-.picture input{
-  font-size: var(--font-16);
-  margin-bottom: 20px;
+.picture {
+  position: relative;
+  display: inline-block;
+}
+
+.picture label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-style: none;
+  width: 250px;
+  height: 45px;
+  background-color: var(--white);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.picture input[type="file"] {
+  opacity: 0;
+  display: block;
+  width: 250px;
+  height: 45px;
 }
 
 .tapToRegister{
@@ -341,17 +364,19 @@ form{
   background-color: var(--lightblue);
   color: var(--white);
   border: none;
+  font-weight: bold;
   border-radius: 10px;
-  width: 50%;
+  width: 250px;
 }
 .tapToReset{
   margin-top: 20px;
   padding: 10px;
   background-color: var(--lightblue);
   color: var(--white);
+  font-weight: bold;
   border: none;
   border-radius: 10px;
-  width: 50%;
+  width: 250px;
 }
 
 /* Footer */
@@ -666,7 +691,7 @@ footer {
       margin-bottom: 20px;
     }
     .preferences {
-      margin-left: -75px;
+      width: 500px;
       display: inline-block;
     }
     .prefSpace {
@@ -675,6 +700,15 @@ footer {
     .picture {
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+    .picture label {
+      width: 500px;
+      height: 45px;
+    }
+    
+    .picture input[type="file"] {
+      width: 500px;
+      height: 45px;
     }
     .tapToRegister{
       padding: 6px;
