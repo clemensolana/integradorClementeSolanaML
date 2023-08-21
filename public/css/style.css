@@ -221,6 +221,7 @@ form{
 }
 .rememberUserAndPass{
   font-size: var(--font-16);
+  cursor: pointer;
 }
 .tapToLogin{
   margin-top: 20px;
@@ -232,6 +233,7 @@ form{
   font-weight: bold;
   border-radius: 10px;
   width: 250px;
+  cursor: pointer;
 }
 
 .createUser{
@@ -278,6 +280,7 @@ form{
   padding: 5px;
   width: 250px;
   background-color: var(--white);
+  cursor: pointer;
 }
 
 .adress input{
@@ -294,6 +297,12 @@ form{
   font-size: var(--font-16);
   margin-bottom: 20px;
   width: 250px;
+}
+.userProfile input{
+  cursor: pointer;
+}
+.userProfile p{
+  cursor: pointer;
 }
 
 .prof{
@@ -329,6 +338,12 @@ form{
   align-items: flex-start;
   flex-direction: column;
   width: 250px;
+}
+.preferences label {
+  cursor: pointer;
+}
+.preferences input {
+  cursor: pointer;
 }
 .userInterest{
   font-weight: bold;
@@ -372,6 +387,7 @@ form{
   font-weight: bold;
   border-radius: 10px;
   width: 250px;
+  cursor: pointer;
 }
 .tapToReset{
   margin-top: 20px;
@@ -383,6 +399,7 @@ form{
   border: none;
   border-radius: 10px;
   width: 250px;
+  cursor: pointer;
 }
 
 /* Footer */
