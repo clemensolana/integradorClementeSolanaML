@@ -6,10 +6,10 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../public')))
 
-const port = 3001;
-app.listen(port, () => {
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
     console.log("El servidor se ha iniciado correctamente en el puerto: " + 
-    port +", bienvenido/a.");
+    PORT +", bienvenido/a.");
 });
 
 app.get('/', (req, res) => {
