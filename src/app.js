@@ -1,10 +1,18 @@
-const path = require('path')
+/* PATH */
+
+const path = require('path');
+
+/* EXPRESS */
 
 const express = require('express');
-
 const app = express();
+const router = express.Router();
+const mainRoutes = require('./routes/mainRoutes');
 
-app.use(express.static(path.join(__dirname, '../public')))
+const routesProducts = require('./routes/mainRoutes.js');
+const productsController = require('./controllers/mainController.js');
+
+/* CREO PUERTO */
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
@@ -12,12 +20,11 @@ app.listen(PORT, () => {
     PORT +", bienvenido/a.");
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, "views/home.html"));
-});
-app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, "views/register.html"));
-});
-app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, "views/login.html"));
-});
+/* EJS */
+
+app.set('view engine', 'ejs');
+
+/* APPS USE */
+
+app.use(express.static('./public'));
+app.use('/', mainRoutes);
