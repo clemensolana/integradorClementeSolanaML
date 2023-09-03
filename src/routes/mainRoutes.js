@@ -9,4 +9,8 @@ router.get('/register', mainController.register);
 
 router.get('/login', mainController.login);
 
+/* para listar los usuarios del sistema */
+
+router.get('/list', mainController.list);
+
 module.exports = router;

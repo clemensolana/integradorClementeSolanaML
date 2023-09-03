@@ -1,121 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Defino codificación -->
-    <meta charset="UTF-8" />
-
-    <!-- Defino escala de la página -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Conecto con las fuentes de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Uso la fuente Roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Uso Font Awesome para íconos del sitio -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Conecto mi HTML con el archivo de CSS para los estilos -->
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- Conecto mi HTML con el archivo de CSS para los estilos normales -->
-    <link rel="stylesheet" href="/css/normalize.css">
-
-    <!-- Defino un título a mi página que se visualizará arriba -->
-    <title>Mercado Liebre by Clemente Solana Silveira</title>
-  </head>
+  <!-- Archivo parcial para el head -->
+  <%- include('partials/head.ejs') %>
 
   <!-- Body -->
-  <!-- Definimos un selector de clase que afectará al body para el color -->
   <body class="bgLightgrey">
-
-    <!-- Header -->
-    <!-- Definimos un selector de clase que afectará al header para el color -->
-    <header class="bgYellow">
-
-    <!-- Definimos un selector de clase que afectará al header para alinear -->
-      <div class="topHeader">
-
-        <!-- Definimos un selector de clase que afectará al logo -->
-        <h1 class="logoML">    
-        <!-- Usamos la siguiente imagen para el header -->
-        <a href="/">
-          <img
-          src="/images/logo-mercado-liebre.svg"
-          alt="logo mercado liebre"
-          />
-        </a>
-        </h1>
-
-        <!-- Creo la barra de búsqueda -->
-        <form class="searchNav" action="" method="" role="search">
-          <input type="text" placeholder="Buscar productos, marcas y más…" 
-          maxlength="120" autocapitalize="off" spellcheck="false" 
-          autocomplete="off"  />
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-
-        <!-- MercadoCrédito -->
-        <p class="credit">
-          <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin
-          tarjeta de crédito
-        </p>
-        
-      </div>
-
-      
-
-      <!-- Menú de navegación con links -->
-      <nav>
-        <ul>
-        <li>
-            <a href="">Ofertas</a>
-        </li>
-        <li>
-            <a href="">Tiendas Oficiales</a>
-        </li>
-        <li>
-            <a href="">Vender</a>
-        </li>
-          <li><a href="">Ayuda</a></li>
-        </ul>
-
-        <!-- Más menús -->
-        <ul>
-          <li>
-            <a href="register">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
-          </li>
-          <li>
-            <a href="login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
-          </li>
-          <li>
-            <a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
-          </li>
-        </ul>
-
-        <!-- Creo el menú hamburguesa -->
-        <div class="burger-menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-
-        <!-- Imagen navidad promociones -->
-      <img class="christmas"
-            src="/images/img-home-banner.jpg"
-            alt="img-home-banner"
-          />
-    </header>
+    
+    <!-- Archivo parcial para header -->
+    <%- include('partials/header.ejs') %>
 
     <!-- Main -->
     <main>
@@ -270,44 +162,8 @@
     </main>
 
 
-<!-- Footer -->
-<!-- Creo un selector de clase para el fondo del footer -->
-<footer class="bgWhite">
+<!-- Archivo parcial para el footer -->
+<%- include('partials/footer.ejs') %>
 
-    <!-- Creo un selector de clase que se utilizará más abajo en las secciones -->
-
-    <!-- Otra sección que repite clase2 -->
-      <section class="theBenefits">
-        <div><i class="fa-solid fa-credit-card"></i></div>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>
-            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!
-        </p>
-      </section>
-
-    <!-- Otra sección que repite clase2 -->
-      <section class="theBenefits">
-        <div><i class="fa-solid fa-gift"></i></div>
-        <h4>Envío gratis desde $ 2.500</h4>
-        <p>
-            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-            productos. Es un beneficio de Mercado Puntos.
-        </p>
-      </section>
-
-    <!-- Otra sección que repite clase2 -->
-      <section class="theBenefits">
-        <div><i class="fa-solid fa-user-shield"></i></div>
-        <h4>Seguridad, de principio a fin</h4>
-        <p>
-            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.
-        </p>
-      </section>
-
-      <!-- Copyright -->
-      <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-    </footer>
   </body>
 </html>
