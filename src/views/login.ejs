@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
   <!-- Archivo parcial para el head -->
-  <%- include('partials/head.ejs') %>
+  <%- include('./partials/head.ejs') %>
 
   <!-- Body -->
   <!-- Definimos un selector de clase que afectará al body para el color -->
   <body class="bgLightgrey">
-
     <!-- Header -->
     <!-- Definimos un selector de clase que afectará al header para el color -->
-    
-    <%- include('partials/header.ejs') %>
+
+    <%- include('./partials/header.ejs') %>
 
     <!-- Main -->
     <main>
-
       <!-- Creo el formulario -->
       <form action="/">
-
         <!-- Creo el div con clase user para el usuario -->
         <div class="user">
           <label for="userName"></label>
-          <input type="text" name="userName" id="userName" placeholder="Nombre de usuari@" required minlength="5" maxlength="12">
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            placeholder="Nombre de usuari@"
+            required
+            minlength="5"
+            maxlength="12"
+          />
         </div>
 
         <!-- Creo el div con clase pass para la contraseña -->
         <div class="pass">
           <label for="passW"></label>
-          <input type="password" name="passW" id="passW" placeholder="Ingresá tu contraseña" required minlength="5" maxlength="12">
+          <input
+            type="password"
+            name="passW"
+            id="passW"
+            placeholder="Ingresá tu contraseña"
+            required
+            minlength="5"
+            maxlength="12"
+          />
         </div>
 
         <!-- Creo un label con clase para hacer un checkbox para recordar la contraseña -->
         <label class="rememberUserAndPass">
-        <input type="checkbox" name="rememberMe" value="yesRemember"> Recordar usuario y contraseña
+          <input type="checkbox" name="rememberMe" value="yesRemember" />
+          Recordar usuario y contraseña
         </label>
 
         <!-- Creo un botón para "enviar" que por el momento lleva a home -->
         <button class="tapToLogin" type="submit">Enviar</button>
-
       </form>
 
       <!-- Agrego un link para ir a formulario de registro en caso de equivocación -->
       <section class="createUser">
-        <a href="register">¿Primera vez? Creá tu cuenta <i class="fa-solid fa-address-card"></i></a>
+        <a href="/users/register"
+          >¿Primera vez? Creá tu cuenta <i class="fa-solid fa-address-card"></i
+        ></a>
       </section>
     </main>
 
-
-<!-- Archivo parcial para el footer -->
-<%- include('partials/footer.ejs') %>
-
+    <!-- Archivo parcial para el footer -->
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Archivo parcial para el head -->
+  <%- include('partials/head.ejs') %>
+
+  <!-- Body -->
+  <!-- Definimos un selector de clase que afectará al body para el color -->
+  <body class="bgLightgrey">
+    <!-- Header -->
+    <!-- Definimos un selector de clase que afectará al header para el color -->
+
+    <%- include('partials/header.ejs') %>
+
+    <!-- Main -->
+    <main>
+      <h1>Lista de usuarios</h1>
+      <ul>
+        <% for (let i = 0; i < users.length; i++) { %>
+        <li>
+          <a href="/detail?userId=<% users[i].Id%>"><%="users[i]" %></a>
+        </li>
+        <% } %>
+      </ul>
+      <h2>Search</h2>
+      <form action="/search" method="get">
+        <input type="text" name="query" id="query" />
+        <input type="submit" value="search" />
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <!-- Creo un selector de clase para el fondo del footer -->
+    <!-- Archivo parcial para el footer -->
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

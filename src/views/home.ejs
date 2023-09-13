@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
   <!-- Archivo parcial para el head -->
-  <%- include('partials/head.ejs') %>
+  <%- include('./partials/head.ejs') %>
 
   <!-- Body -->
   <body class="bgLightgrey">
-    
     <!-- Archivo parcial para header -->
-    <%- include('partials/header.ejs') %>
+    <%- include('./partials/header.ejs') %>
 
     <!-- Main -->
     <main>
-
-    <!-- Definimos un selector de clases para la sección se usará más abajo nuevamente -->
+      <!-- Definimos un selector de clases para la sección se usará más abajo nuevamente -->
       <section class="cardSquare">
         <h2>Basado en tu última visita</h2>
 
@@ -161,9 +159,7 @@
       </section>
     </main>
 
-
-<!-- Archivo parcial para el footer -->
-<%- include('partials/footer.ejs') %>
-
+    <!-- Archivo parcial para el footer -->
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
