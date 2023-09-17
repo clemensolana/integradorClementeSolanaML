@@ -7,6 +7,14 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
+/* Method Override */
+
+const methodOverride = require('method-override');
+
+/* body-parser */
+
+const bodyParser = require('body-parser');
+
 const mainRoutes = require('./routes/mainRoutes');
 // const productsRoutes = require('./routes/productsRoutes.js');
 const usersRoutes = require('./routes/usersRoutes');
@@ -32,4 +40,7 @@ app.set('views', __dirname + '/views');
 app.use('/', mainRoutes); // Todas las url que comiencen con /, se dirigen al archivo mainRoutes
 // app.use('/products', productsRoutes); // Todas las url que comiencen con /products, se dirigen al archivo productsRoutes
 app.use('/users', usersRoutes); // Todas las url que comiencen con /users, se dirigen al archivo usersRoutes
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../public')));
+app.use(methodOverride('_method'));

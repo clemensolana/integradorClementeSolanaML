@@ -17,13 +17,15 @@
       <ul>
         <% for (let i = 0; i < users.length; i++) { %>
         <li>
-          <a href="/detail?userId=<% users[i].Id%>"><%="users[i]" %></a>
+          <a href="/users/detail?userId=<%= users[i].id %>"
+            ><%= users[i].name %></a
+          >
         </li>
         <% } %>
       </ul>
       <h2>Search</h2>
-      <form action="/search" method="get">
-        <input type="text" name="query" id="query" />
+      <form action="/users/search" method="get">
+        <input type="text" name="search" id="search" />
         <input type="submit" value="search" />
       </form>
     </main>
