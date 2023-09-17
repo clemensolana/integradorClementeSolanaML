@@ -37,10 +37,10 @@ app.set('views', __dirname + '/views');
 
 /* APPS USE */
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use('/', mainRoutes); // Todas las url que comiencen con /, se dirigen al archivo mainRoutes
 // app.use('/products', productsRoutes); // Todas las url que comiencen con /products, se dirigen al archivo productsRoutes
 app.use('/users', usersRoutes); // Todas las url que comiencen con /users, se dirigen al archivo usersRoutes
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
