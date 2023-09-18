@@ -14,7 +14,11 @@
     <!-- Main -->
     <main>
       <!-- Creo el formulario -->
-      <form method="POST" action="/users/register">
+      <form
+        method="POST"
+        action="/users/register"
+        enctype="multipart/form-data"
+      >
         <!-- Creo el div con clase fullName para apellido y nombre -->
         <div class="fullName">
           <label for="nameAndLastname"></label>
