@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- Archivo parcial para el head -->
+  <%- include('./partials/head.ejs') %>
+
+  <!-- Body -->
+  <!-- Definimos un selector de clase que afectará al body para el color -->
+  <body class="bgLightgrey">
+    <!-- Header -->
+    <!-- Definimos un selector de clase que afectará al header para el color -->
+
+    <%- include('./partials/header.ejs') %>
+
+    <!-- Main -->
+    <main>
+      <!-- Creo el formulario -->
+      <form method="POST" action="/users/edit?_method=PUT">
+        <!-- Creo el div con clase fullName para apellido y nombre -->
+        <div class="fullName">
+          <label for="nameAndLastname"></label>
+          <input type="text" name="name" value="<%= userToEdit.name %>" />
+        </div>
+
+        <!-- Creo un botón para "enviar" que por el momento lleva a home -->
+        <button class="tapToRegister" type="submit">Editar</button>
+      </form>
+
+      <!-- Agrego un link para ir a formulario de login en caso de equivocación -->
+      <section class="logUser">
+        <a href="/users/login"
+          >¿Ya tenés una cuenta? Ingresá aquí<i
+            class="fa-solid fa-right-to-bracket"
+          ></i
+        ></a>
+      </section>
+    </main>
+
+    <!-- Archivo parcial para el footer -->
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
